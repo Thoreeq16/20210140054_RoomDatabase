@@ -1,16 +1,16 @@
 package com.example.pertemuan10.Repositori
 
-import com.example.pertemuan10.data.DataSiswa
+import com.example.pertemuan10.data.Siswa
 import kotlinx.coroutines.flow.Flow
 
 interface RepositoriSiswa {
-    fun getAllSiswaStream(): Flow<List<DataSiswa>>
+    fun getAllSiswaStream(): Flow<List<Siswa>>
 
-    fun getSiswaStream(id: Int): Flow<DataSiswa?>
+    fun getSiswaStream(id: Int): Flow<Siswa?>
 
-    suspend fun insertSiswa(siswa: DataSiswa)
+    suspend fun insertSiswa(siswa: Siswa)
 
-    suspend fun deleteSiswa(siswa: DataSiswa)
+    suspend fun deleteSiswa(siswa: Siswa)
 
-    suspend fun updateSiswa(siswa: DataSiswa)
+    suspend fun updateSiswa(siswa: Siswa)
 }
